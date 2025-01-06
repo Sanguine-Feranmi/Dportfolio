@@ -21,17 +21,17 @@ export class RightbrComponent {
     { 
       name: 'code', 
       icon: faCode,
-      routerl:'/services',
+      routerl:'/pro',
     },
     { 
       name: 'user-graduate', 
       icon: faUserGraduate,
-      routerl:'/prices',
+      routerl:'/edu',
     },
     { 
       name: 'toolbox', 
       icon: faToolbox,
-      routerl:'/recommendation',
+      routerl:'/skill',
     },
     { 
       name: 'feather', 

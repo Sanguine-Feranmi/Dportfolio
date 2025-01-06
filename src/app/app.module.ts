@@ -14,6 +14,9 @@ import { BlogComponent } from './comps/home/blog/blog.component';
 import { ContactComponent } from './comps/contact/contact.component';
 import { InfosComponent } from './comps/contact/infos/infos.component';
 import { HeroComponent } from './comps/home/hero/hero.component';
+import { ProjectsComponent } from './comps/projects/projects.component';
+import { EducationComponent } from './comps/education/education.component';
+import { SkillsComponent } from './comps/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HeroComponent } from './comps/home/hero/hero.component';
     BlogComponent,
     ContactComponent,
     InfosComponent,
-    HeroComponent
+    HeroComponent,
+    ProjectsComponent,
+    EducationComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
