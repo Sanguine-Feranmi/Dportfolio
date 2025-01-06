@@ -1,0 +1,6 @@
+<div class="flex flex-col">
+    <!-- home -->
+     <div class="flex flex-col gap-4 " >
+        <fa-icon *ngFor="let item of icons"  [icon]="item.icon" class="bg-[#F0F0F6] text-center text-black p-2 md:p-4 lg:p-6 rounded-full" [routerLink]="item.routerl" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ></fa-icon>
+     </div>
+</div>

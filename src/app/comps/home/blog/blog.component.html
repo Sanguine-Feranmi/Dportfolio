@@ -1,0 +1,22 @@
+<!-- mian  -->
+ <div class="flex flex-col gap-12 bg-transparent py-10 px-4">
+    <div class="flex flex-col gap-2 mx-auto w-full text-center">
+        <h1 class="text-3xl font-bold">Blogs</h1>
+        <p class="text-gray-500">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3 justify-center w-full mx-auto">
+        <div class="flex gap-2 justify-around w-full"  *ngFor="let item of blog" >
+            <div class="flex flex-col bg-white gap-4 w-full" >
+                <div class="w-full m-auto" >
+                    <img src={{item.image}} alt="" class="w-full h-60 object-cover" >
+                </div>
+                <div class="p-3 flex flex-col gap-2">
+                    <h1 class="font-bold text-[18px] md:text-[14px] lg:text-[20px] capitalize"> {{item.title}} </h1>
+                    <p class="text-gray-500"> {{item.desc}} </p>
+                    <button class="items-center text-left text-[#FFB400] font-bold underline" > {{item.btn}} <fa-icon [icon]="faArrowCircleRight" ></fa-icon> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- mian ends -->

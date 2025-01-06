@@ -1,0 +1,88 @@
+<div class="md:flex p-2 md:justify-between gap-3">
+    <div class="w-full md:w-[60%] lg:w-[70%] flex flex-col gap-6">
+        <div class="">
+            <h1 class="font-bold text-2xl pl-6">Leave Us Your Info</h1>
+        </div>
+        <div class="bg-white p-6">
+            <form class="flex flex-col gap-4">
+                <div class="flex flex-col gap-1">
+                    <label for="name">Your Full Name (Required)</label>
+                    <input type="text" class="bg-[#F0F0F6] rounded-sm px-3 py-1" id="name" name="name" >
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="email">Your Email (Required)</label>
+                    <input type="email" class="bg-[#F0F0F6] rounded-sm px-3 py-1" id="email" name="email" >
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="bg-[#F0F0F6] rounded-sm px-3 py-1" id="email" name="email" >
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="bg-[#F0F0F6] rounded-sm px-3 py-1"></textarea>
+                </div>
+                <div class="">
+                    <button class="bg-[#FFB400] px-4">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="w-full md:w-[40%] lg:w-[30%] flex flex-col gap-6 ">
+        <div class="">
+            <h1 class="font-bold text-2xl">Contact Information</h1>
+        </div>
+        <div class="flex flex-col gap-5 justify-between" *ngFor="let item of info">
+            <div class="bg-white px-4 py-7 flex flex-col justify-center gap-2">
+                <div class="text-center">
+                    <fa-icon [icon]="item.icon1" class="text-[#FFB400] text-2xl text-center"></fa-icon>
+                </div>
+                <div class="flex justify-between">
+                    <p>Country:</p>
+                    <p>{{item.country}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>City:</p>
+                    <p>{{item.city}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Street:</p>
+                    <p>{{item.street}}</p>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-7 flex flex-col justify-center gap-2">
+                <div class="text-center">
+                    <fa-icon [icon]="item.icon2" class="text-[#FFB400] text-2xl text-center"></fa-icon>
+                </div>
+                <div class="flex justify-between">
+                    <p>Email:</p>
+                    <p>{{item.email}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Skype:</p>
+                    <p>{{item.skype}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Telegram:</p>
+                    <p>{{item.telegram}}</p>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-7 flex flex-col justify-center gap-2">
+                <div class="text-center">
+                    <fa-icon [icon]="item.icon1" class="text-[#FFB400] text-2xl text-center"></fa-icon>
+                </div>
+                <div class="flex justify-between">
+                    <p>Support Service:</p>
+                    <p>{{item.support}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Office:</p>
+                    <p>{{item.office}}</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Personal:</p>
+                    <p>{{item.phone}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
