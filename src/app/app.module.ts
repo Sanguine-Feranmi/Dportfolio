@@ -17,6 +17,7 @@ import { HeroComponent } from './comps/home/hero/hero.component';
 import { ProjectsComponent } from './comps/projects/projects.component';
 import { EducationComponent } from './comps/education/education.component';
 import { SkillsComponent } from './comps/skills/skills.component';
+import { WorkhComponent } from './comps/home/workh/workh.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SkillsComponent } from './comps/skills/skills.component';
     HeroComponent,
     ProjectsComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    WorkhComponent
   ],
   imports: [
     BrowserModule,

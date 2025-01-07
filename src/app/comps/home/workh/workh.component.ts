@@ -1,35 +1,34 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-education',
+  selector: 'app-workh',
   standalone: false,
   
-  templateUrl: './education.component.html',
-  styleUrl: './education.component.css'
+  templateUrl: './workh.component.html',
+  styleUrl: './workh.component.css'
 })
-export class EducationComponent {
+export class WorkhComponent {
   edu = [
     {
-      university: 'University of Toronto',
+      university: 'Lead Web Developer',
       degree: 'Certificate of Web Training',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.',
-      year: 'Jan 2017 - Dec 2019',
+      year: 'Jan 2013 - Dec 2015',
       status: 'Student'
     },
     {
-      university: 'University of Toronto',
+      university: 'Junior Web Developer',
       degree: 'Certificate of Web Training',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.',
-      year: 'Jan 2017 - Dec 2019',
+      year: 'Jan 2015 - Dec 2019',
       status: 'Student'
     },
     {
-      university: 'University of Toronto',
+      university: 'Senior Web Developer',
       degree: 'Certificate of Web Training',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.',
-      year: 'Jan 2017 - Dec 2019',
+      year: 'Jan 2019 - Dec 2024',
       status: 'Student'
     },
   ]
-
 }
