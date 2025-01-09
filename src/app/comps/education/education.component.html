@@ -1,4 +1,4 @@
-<div class="">
+<div class=" p-4">
     <div class="flex flex-col gap-5 items-center text-center lg:w-[50%] m-auto ">
         <h1 class="font-bold text-4xl">Education</h1>
         <p class="text-gray-500" >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
@@ -8,9 +8,9 @@
         <!-- inner -->
         <div class="flex flex-col">
             <!-- main  -->
-            <div class="flex p-3 border-b-[1px]" *ngFor="let item of edu" >
+            <div class=" flexflex-col md:flex  p-3 border-b-[1px]" *ngFor="let item of edu" >
                 <!-- first -->
-                <div class="flex flex-col w-[40%] justify-between ">
+                <div class="flex flex-col w-[100%] md:w-[40%] gap-2 justify-between ">
                     <!-- uni -->
                     <div class="">
                         <h1> {{item.university}} </h1>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <!-- second -->
-                <div class="flex flex-col w-[60%] justify-between">
+                <div class="flex flex-col w-[100%] md:w-[60%] justify-between">
                     <!-- cert  -->
                      <div class="">
                         <h1 class="font-medium text-[20px]" >{{item.degree}}</h1>
